@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="offline/css/bootstrap.css">
+    <link rel="stylesheet" href="offline/fontawesome-free-6.4.0-web/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>ecommerce-product-page</title>
+</head>
+<body>
+    
+    <div class="full-div">
+        <button type="button" id="float-btn"><i class="fa fa-xmark"></i></button>
+        <div class="fulls-div">
+            <img src="images/image-product-1.jpg" alt="snikers" class="imgss">
+            <div id="float-img-small">
+                <img src="images/image-product-1-thumbnail.jpg" alt="snikers" id="img5" >
+                <img src="images/image-product-2-thumbnail.jpg" alt="sec snickers" id="img6" >
+                <img src="images/image-product-3-thumbnail.jpg" alt="thirde snickers" id="img7" >
+                <img src="images/image-product-4-thumbnail.jpg" alt="fourth snickers" id="img8" >
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="nav-bar" class="d-flex">
+            <i class="fa fa-bars fa-bounce mt-3" id="bars"></i>
+            <h2>sneakers</h2>
+             <div id="head">
+                <div id="list-nav" class="d-flex">
+
+                    <i id="mob-nav" class="fa fa-xmark mt-3"></i>
+                
+                    <ul class="d-flex">
+                        <li id="ll">Collections</li>
+                        <li>Men</li>
+                        <li>Women</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+             </div>
+            
+            <div id="icon-nav-div" class="d-flex">
+                <i class="fa fa-cart-shopping  mt-2" id="cart">0</i>
+                <img src="images/image-avatar.png" alt="image-avatar">
+                <div class="d-blocks">
+                    <div id="cart-div">
+                        <div class="d-flex">
+                            <h3>cart</h3>
+                        <em class="mt-2">cancle order</em>
+                        </div>
+                        <hr>
+                        <small>your cart is empty</small>
+                        <div id="checkout-img-div" class="d-flex">
+                            
+                            <p></p>
+                        </div>
+                        <div class="d-flex" id="price-divs">
+                            <h6>$125.00 x</h6> <h6 id="num">0</h6> <h6 id="dis-price"></h6>
+                         </div>
+                        <button type="button">Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr size="5%">
+
+        <div class="container" id="imgdiv">
+               <div id="main-img-div" >
+                 <div id="main-div-img">
+                    <img src="images/image-product-1.jpg" alt="snikers" class="imgs" id="img-click">
+                 </div>
+                  <div id="small-img">
+                    <img src="images/image-product-1-thumbnail.jpg" alt="snikers" id="img1">
+                    <img src="images/image-product-2-thumbnail.jpg" alt="sec snickers" id="img2">
+                    <img src="images/image-product-3-thumbnail.jpg" alt="thirde snickers" id="img3">
+                    <img src="images/image-product-4-thumbnail.jpg" alt="fourth snickers" id="img4">
+                  </div>
+               </div>
+            <div class="d-block" id="sec-div">
+                <small>SNEAKER COMPANY</small>
+                <h1>Fall Limited Edition Sneakers</h1>
+                  <blockquote>These low-profile sneakers are your perfect casual wear companion featuring a durable rubber outer sole they`ll withstand everything the whether can offer.</blockquote>
+                  <div id="mobile">
+                        <div class="d-flex">
+                            <h4>$125.00</h4><i class="nums">50%</i>
+                        </div>
+                          <del class="mt-2">$250.00</del>
+                   </div>
+            </div>
+            
+        
+    </div>
+        </div>
+        <div class="d-flex" id="button-div">
+            <div class="d-block" id="num-div">
+                <button class="counterbtn prevbtn" id="prev"><i class="fa fa-minus "> </button></i> <span id=counters>0</span>  <button class="counterbtn nextbtn" id="next"><i class="fa fa-plus"></button></i>
+            </div>
+            <div id="but-div">
+                <i><button type="button" id="check-btn"><i class="fa fa-cart-plus"></i> Add to cart</button></i>
+            </div>
+        </div>
+
+
+    <script src="offline/js/bootstrap.bundle.js"></script>
+    <script src="offline/jquery-3.7.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>

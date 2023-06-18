@@ -1,0 +1,547 @@
+*{
+    box-sizing: border-box;
+}
+
+html body{
+    margin:0;
+    padding:0;
+    display:grid;
+    justify-content:center;
+    padding:5px 20px 0 20px;
+}
+
+.container{
+    display:grid;
+    justify-content: center;
+}
+
+#list-nav ul li{
+    list-style: none;
+    margin:3% 0 0 7%;
+}
+
+#list-nav ul li:hover{
+    border-bottom: solid 2px orange;
+}
+
+#icon-nav-div i{
+    margin-left:33rem;
+    opacity:0;
+}
+
+#icon-nav-div img{
+    margin-left:1rem;
+    width:30px;
+    height:30px;
+}
+
+#imgdiv{
+    display:flex;
+}
+
+#main-img-div img{
+    width:400px;
+    border-radius: 10px;
+}
+
+#small-img{
+    margin-left:-10px;
+}
+
+#small-img img{
+    width:75px;
+    border-radius: 10%;
+    margin:15px 0 0 23px;
+}
+
+#sec-div{
+    margin:2rem 0 0 4.5rem;
+}
+
+#sec-div small{
+    color:orange
+}
+
+#sec-div h1{
+    margin:1rem 0 0 0;
+}
+
+#sec-div blockquote{
+    margin:1rem 0 0 0;
+}
+
+#sec-div h4{
+    margin-top: 1rem;
+}
+
+#sec-div i{
+    margin-top: 1.1rem;
+}
+
+#button-div{
+    margin:-7rem 0 0 32rem;
+}
+
+#button-div p{
+    background-color: rgb(218, 218, 218);
+    padding:4px;
+}
+
+.nums{
+    margin-left: 1rem;
+    background-color: rgba(255, 168, 7, 0.2);
+    color:orange;
+    height:25px;
+}
+
+#button-div .fa-minus{
+    color:rgba(255, 168, 7, 1)
+}
+
+
+#button-div .fa-plus{
+    margin-left: 1rem;
+    color:orange
+}
+
+#button-div span{
+    margin-left:1rem;
+}
+
+.counterbtn{
+    border:none;
+}
+
+
+
+#button-div #check-btn{
+    margin-left: 2rem;
+    padding: 5px 0 5px 0;
+    border-radius: 5px;
+    width:170px;
+    background-color: rgb(230, 84, 31);
+    color:white;
+    border:none;
+}
+
+#button-div button:hover{
+    background-color: rgba(230, 84, 31, 0.7);
+}
+
+/* cart section*/
+
+.d-blocks{
+    background-color: white;
+    box-shadow: 5px 5px 10px black;
+}
+
+#cart-div{
+    display:none;
+    position:fixed;
+    padding: 7px;
+    top:4.2rem;
+    right:1rem;
+    border: solid 1px;
+    width:250px;
+    height:auto;
+    background-color:white;
+    box-shadow: 5px 5px 10px black;
+    overflow: hidden;
+}
+
+#cart-div h3{
+    padding-left: 0.5rem;
+    padding-top: 0.3rem;
+}
+
+#cart-div small{
+    margin-left: 4rem;
+    margin-top:-1rem;
+}
+
+em{
+    display: none;
+    margin-left: 5rem;
+    padding-left: 0.4rem;
+    color:red;
+}
+
+em:hover{
+    border:solid 1px red;
+    width:100px;
+    color: black;
+}
+
+#cart-div small{
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   padding-top: 1rem;
+}
+
+#price-divs{
+    margin: -1rem 0 0 3.1rem;
+}
+
+#price-divs h6{
+    font-size: x-small;
+    margin-left: 0.3rem;
+}
+
+#dis-price{
+    font-weight: bolder;
+}
+
+#cart-div button{
+    display:none;
+    width:100%;
+    margin-top: 1.4rem;
+    background-color: orangered;
+    color:white;
+}
+
+/* jquery corasel slide*/
+
+.full-div{
+    display:none;
+    position: fixed;
+    top:-1rem;
+    left:-1rem;
+    border:solid 1px;
+    width:400vh;
+    height:400vh;
+   background-color: rgba(0,0,0, 0.6);
+}
+
+.fulls-div{
+  margin:4.5rem 0 0 18rem;
+}
+
+.full-div .fulls-div img{
+    width:500px;
+}
+
+.fulls-div #float-img-small img{
+    width:80px;
+    border-radius: 10px;
+    margin-top: 1rem;
+    margin-left: 2.6rem;
+}
+
+#float-img-small {
+    margin-left:-1rem;
+}
+
+#float-btn{
+    position: fixed;
+    margin:2rem 0 0 50rem;
+    background-color: rgba(0,0,0, 0);
+    color:white;
+    border:none;
+}
+
+#float-btn:hover{
+    color: orange;
+}
+
+#checkout-img-div p{
+    margin-left:0.6rem;
+    font-size: xx-small;
+}
+
+#mob-nav{
+    display: none;
+}
+
+#nav-bar #bars{
+    display:none;
+}
+
+
+
+@media screen and (max-width:767px) {
+    body{
+        display:grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #nav-bar #bars{
+      display:block;
+      margin-left: 1.5rem;
+    }
+
+    #nav-bar h2{
+        margin-left:1rem;
+    }
+
+    #head{
+        margin-left:-9rem;
+        display:none;
+    }
+
+    #list-nav{
+        position:fixed;
+        border:solid 1px transparent;
+        background-color:rgba(0,0,0, 0.6);
+        width:100vh;
+        height:120vh;
+        margin-top: -2px;
+    }
+
+    #list-nav ul{
+        display:block;
+        flex-direction: column;
+        background-color: white;
+        border:solid 1px transparent;
+        width:30%;
+        font-weight: bolder;
+        
+    }
+
+    #list-nav ul #ll{
+        padding-top:2rem;
+    }
+
+    #icon-nav-div i{
+        margin-left:11.5rem;
+    }
+
+    hr{
+        display:none;
+    }
+
+    #mob-nav{
+        display:block;
+        position:fixed;
+        margin-left: 1rem;
+    }
+    
+
+    #imgdiv{
+        display:grid;
+        flex-direction: column;
+    }
+
+    #main-div-img img{
+        border-radius: 0;
+        width:500px;
+        margin-top: -rem;
+        margin-left:0.4rem;
+    }
+
+    #sec-div {
+      border:solid 1px transperent;
+      width:370px;
+      padding:4px 10px 2px 10px;
+      margin:-0.2rem 0 0 0.2rem;
+    }
+
+    #sec-div h1{
+        margin-top:rem;
+    }
+
+    #small-img{
+        display:none;
+    }
+
+    #mobile{
+        display: flex;
+    }
+
+    del{
+        margin:8rem 0 0 10rem;
+    }
+
+    #button-div{
+        display: block;
+        flex-direction: column;
+        margin:1rem 0 0 1rem;
+    }
+
+    #num-div{
+        display: block;
+        margin:-0.3rem 0 0 -1rem;
+        padding: 2px;
+        border:solid 1px;
+        width:60%;
+
+    }
+
+    #prev{
+       padding-left: -2rem;
+    }
+
+    #counters{
+        padding-left: 4rem;
+        margin-left: -5rem;
+    }
+
+    #next i{
+        margin-right: -10rem;
+     }
+
+    #but-div #check-btn{
+        display: block;
+        width:60%;
+        padding:6px;
+        margin-left:3rem;
+    }
+
+    /* cart or checkout div*/
+
+    #cart-div{
+        left:0.2rem;
+        top:2.8rem;
+        width:370px;
+    }
+
+    em{
+        margin-left:13rem;
+    }
+
+    #cart-div small{
+        margin-left:9rem;
+    }
+
+
+}
+
+@media screen and (max-width:414px) {
+
+    #nav-bar #bars{
+        margin-left: -0.2rem;
+    }
+
+    #cart-div{
+        left:1rem;
+    }
+
+    #main-div-img img{
+        margin-left:-1.6rem;
+        width:370px;
+    }
+
+    #sec-div{
+        margin:0 0 0 -1.3rem;
+    }
+
+    #button-div{
+        margin-left:-2rem;
+    }
+
+    #but-div #check-btn{
+        display: block;
+        width:70%;
+        padding:6px;
+        margin-left:4rem;
+        margin-top:0.5rem;
+    }
+
+    #num-div{
+        display: block;
+        margin:0.5rem 0 0 4rem;
+        padding: 2px;
+        border:solid 1px;
+        width:70%;
+
+    }
+
+    #next i{
+        margin-right: -12rem;
+     }
+
+     #counters{
+        padding-left: 6rem;
+        margin-left: -5rem;
+    }
+
+    #icon-nav-div i{
+        margin-left:9.5rem;
+    }
+
+}
+
+@media screen and (max-width:412px) {
+
+    #nav-bar #bars{
+        margin-left: 0.5rem;
+    }
+
+    #main-div-img img{
+        margin-left:-0.5rem;
+        width:400px;
+    }
+
+    #sec-div{
+        margin:0 0 0 0.7rem;
+    }
+
+    #icon-nav-div i{
+        margin-left:11.5rem;
+    }
+
+    #button-div{
+        margin-left:-1rem;
+    }
+
+    #next i{
+        margin-right: -15rem;
+     }
+}
+
+@media screen and (max-width:393px) {
+    #nav-bar #bars{
+        margin-left: 1.5rem;
+    }
+    #icon-nav-div i{
+        margin-left:10.5rem;
+    }
+}
+
+@media screen and (max-width:360px) {
+
+    #nav-bar #bars{
+        margin-left: 1.7rem;
+    }
+
+    #main-div-img img{
+        margin-left:rem;
+        width:400px;
+    }
+
+    #sec-div{
+        margin:0 0 0 0.8.5rem;
+    }
+}
+
+@media screen and (max-width:280px) {
+
+    #nav-bar #bars{
+        margin-left: 1rem;
+    }
+
+    #main-div-img img{
+        margin-left:0.3rem;
+        width:270px;
+    }
+
+    #sec-div{
+        margin:0 0 0 0;
+        font-size: x-small;
+        width:270px;
+    }
+
+    #icon-nav-div i{
+        margin-left:4.5rem;
+    }
+
+    #next i{
+        margin-right: -9rem;
+     }
+
+      #counters{
+        padding-left: 4rem;
+        margin-left: -5rem;
+    }
+}
